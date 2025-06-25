@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 1st part of WebPage
+1st strip */
+
+.top-part {
+    height: 36px;
+    width: 100%;
+    background-color: rgba(242, 237, 237, 0.505);
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 12px;
+}
+
+.left img {
+    height: 20px;
+    width: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 20px;
+    margin-left: 40px;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+    /* gap: 25px; */
+    font-weight: 700;
+    color: #111111;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.right ul li {
+    padding: 0 10px;
+    border-left: 1px solid #000;
+}
+
+.right ul li:first-child {
+    border-left: none;
+}
+
+.navbar {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 75px;
+    width: 75px;
+    margin-left: 40px;
+}
+/* -------------------------------------------------- */
+
+/* 2nd strip */
+
+.center-area {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-area ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.center-area ul li {
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+.center-area ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.center-area ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.left-area {
+    font-weight: 100;
+    font-size: 23px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.left-area .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 100px;
+    padding: 5px 10px;
+    width: 170px;
+    margin-right: 17px;
+}
+
+.left-area .search-container i {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.search-container:hover {
+    background-color: #dddddd;
+}
+
+.left-area input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+.left-area i {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.left-area i:hover {
+    background-color: #dddddd;
+
+}
+
+.left-area i.ri-shopping-bag-line {
+    margin-right: 35px;
+}
+
+.newz-section {
+    height: 75px;
+    width: 100%;
+    background-color: rgba(242, 237, 237, 0.505)
+}
+/* -------------------------------------------------- */
+
+/* 3rd strip */
+
+.newz-section .text {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.newz-section .text2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.newz-section .text3 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.newz-section .text4 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.newz-section .text5 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.newz {
+    animation: slide 3s infinite;
+    ;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+.newz-1 {
+    padding: 10px;
+    animation-delay: 0s;
+}
+
+.newz-2 {
+    padding: 10px;
+    animation-delay: 2s;
+}
+
+@keyframes slide {
+
+    0%,
+    20% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    25%,
+    45% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50%,
+    70% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    75%,
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+/* -------------------------------------------------- */
+
+/* Banner Part */
+
+main {
+    background-color: white;
+}
+
+.main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m1 {
+    top: 4px;
+    height: 100%;
+    width: 93vw;
+    object-fit: contain;
+    position: relative;
+}
+
+.bt_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 33px;
+    font-weight: 550;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.bt_2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 80px;
+    display: inline-block, flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.bt_2 br {
+    display: block;
+    content: "";
+    margin-top: 10px;
+}
+
+.bt_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.shop-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.shop-button {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 90px;
+}
+
+.shop-button:hover {
+    background-color: #333;
+}
+/* -------------------------------------------------- */
+/* Nike Campaign */
+/* The Lates Part */
+
+.the_latest_text{
+    color: black;
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+.the_latest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 705px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  max-width: 80%;
+}
+
+.card-text p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card-text h3 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.card-text button {
+  margin-top: 15px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 9px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* -------------------------------------------------- */
+
+/* Featured Section */
+/* Featured Section Styling */
+.featured-section {
+  padding: 50px 80px;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.featured-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.featured-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.featured-card {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.featured-card p {
+  margin-top: 35px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}

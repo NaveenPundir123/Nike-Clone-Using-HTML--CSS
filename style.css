@@ -47,7 +47,6 @@ body {
 .right ul {
     display: flex;
     list-style: none;
-    /* gap: 25px; */
     font-weight: 700;
     color: #111111;
     font-size: 12px;
@@ -543,6 +542,7 @@ main {
     justify-content: center;
     margin-top: 15px;
 }
+
 .dontmiss_text3 {
     display: flex;
     align-items: center;
@@ -552,13 +552,15 @@ main {
     font-weight: 500;
     color: black;
 }
+
 .shop-button1-container {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
-.shop-button1{
-        font-family: 'Helvetica Neue', Arial, sans-serif;
+
+.shop-button1 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -574,120 +576,124 @@ main {
 /* Shop by Icon Feature */
 
 .shop_by_icon {
-  padding: 10px 40px;
-  background-color: white;
-  font-family: 'Inter', sans-serif;
+    padding: 10px 40px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 .shop_by_icon_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .shop_by_icon_title {
-  font-size: 25px;
-  font-weight: 500;
-  margin-left: 35px;
-  line-height: 2px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 46px;
+    line-height: 2px;
 }
 
 .shop_by_icon_but button {
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 18px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .icon_scroll_wrapper {
-  display: flex;
-  overflow-x: scroll;
-  gap: 16px;
-  scroll-behavior: smooth;
-  padding-bottom: 90px;
-  margin-left: 30px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    scroll-behavior: smooth;
+    padding-bottom: 90px;
+    margin-left: 46px;
 }
 
 .icon_scroll_wrapper::-webkit-scrollbar {
-  height: 6px;
+    height: 6px;
 }
+
 .icon_scroll_wrapper::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+    background: #888;
+    border-radius: 10px;
 }
+
 .icon_scroll_wrapper::-webkit-scrollbar-track {
-  background: #eee;
+    background: #eee;
 }
 
 .icon_card {
-  min-width: 280px;
-  flex-shrink: 0;
-  background-color: #f8f8f8;
-  text-align: center;
+    min-width: 280px;
+    flex-shrink: 0;
+    background-color: #f8f8f8;
+    text-align: center;
 }
 
 .icon_card img {
-  width: 380px;
-  height: 390px;
-  margin-bottom: 10px;
+    width: 380px;
+    height: 390px;
+    margin-bottom: 10px;
 }
 
 /* -------------------------------------------------- */
 /* Trending Now Section */
 
 .trending_now {
-  margin-top: 100px;
-  padding: 10px 40px;
-  background-color: white;
-  font-family: 'Inter', sans-serif;
+    margin-top: 100px;
+    padding: 10px 40px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 .trending_now_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .trending_now_title {
-  font-size: 25px;
-  font-weight: 500;
-  margin-left: 2px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 2px;
 }
 
 .trending_now_but button {
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 18px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .trending_scroll_wrapper {
-  display: flex;
-  overflow-x: scroll;
-  gap: 16px;
-  scroll-behavior: smooth;
-  margin-left: 1px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    scroll-behavior: smooth;
+    margin-left: 1px;
 }
 
 .trending_scroll_wrapper::-webkit-scrollbar {
-  height: 6px;
+    height: 6px;
 }
+
 .trending_scroll_wrapper::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+    background: #888;
+    border-radius: 10px;
 }
+
 .trending_scroll_wrapper::-webkit-scrollbar-track {
-  background: #eee;
+    background: #eee;
 }
 
 /* .trending_card {
@@ -698,28 +704,32 @@ main {
 } */
 
 .trending_card img {
-  width: 413px;
-  height: 415px;
-  margin-bottom: 10px;
+    width: 413px;
+    height: 415px;
+    margin-bottom: 10px;
 }
-.trending_h1{
+
+.trending_h1 {
     color: #111111;
     font-size: 14px;
     font-weight: 500;
     line-height: 8px;
 }
-.trending_h2{
+
+.trending_h2 {
     color: #707072;
     font-size: 16px;
     font-weight: 400;
     line-height: 15px;
 }
-.trending_h3{
+
+.trending_h3 {
     color: #111111;
     font-size: 16px;
     font-weight: 500;
 }
-.trending_card a{
+
+.trending_card a {
     text-decoration: none;
 }
 
@@ -727,65 +737,180 @@ main {
 /* Shop by Sport */
 
 .shop_by_sport {
-  padding: 10px 40px;
-  background-color: white;
-  font-family: 'Inter', sans-serif;
+    padding: 10px 40px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 .shop_by_sport_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 80px;
 }
 
 .shop_by_sport_title {
-  font-size: 25px;
-  font-weight: 500;
-  margin-left: 35px;
-  line-height: 2px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 46px;
+    line-height: 2px;
 }
 
 .shop_by_sport_but button {
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 18px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .sport_scroll_wrapper {
-  display: flex;
-  overflow-x: scroll;
-  gap: 16px;
-  scroll-behavior: smooth;
-  padding-bottom: 90px;
-  margin-left: 30px;
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    scroll-behavior: smooth;
+    padding-bottom: 30px;
+    margin-left: 46px;
 }
 
+/* Scrollbar Style */
 .sport_scroll_wrapper::-webkit-scrollbar {
-  height: 6px;
-}
-.sport_scroll_wrapper::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-.sport_scroll_wrapper::-webkit-scrollbar-track {
-  background: #eee;
+    height: 6px;
 }
 
-/* .sport_card {
-  min-width: 280px;
-  flex-shrink: 0;
-  background-color: #f8f8f8;
-  text-align: center;
-} */
+.sport_scroll_wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.sport_scroll_wrapper::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+/* Sport Card */
+.sport_card {
+    position: relative;
+    display: inline-block;
+}
 
 .sport_card img {
-  height: 300px;
-  width: 400px;
-  margin-bottom: 10px;
+    height: 290px;
+    width: 380px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.sport_sec_butt {
+    position: absolute;
+    bottom: 58px;
+    left: 29px;
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------- */
+/* Footer */
+
+.footer_line {
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+footer.footer {
+  padding: 40px 60px;
+  background: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-columns .column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.footer-columns .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns .column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-columns .column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 400;
+}
+
+.footer-columns .column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-columns .country {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  padding-top: 6px;
+  white-space: nowrap;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 25px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-bottom p {
+  margin: 0;
+  margin-right: 30px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }

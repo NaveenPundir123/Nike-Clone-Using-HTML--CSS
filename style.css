@@ -83,6 +83,7 @@ body {
     width: 75px;
     margin-left: 40px;
 }
+
 /* -------------------------------------------------- */
 
 /* 2nd strip */
@@ -184,6 +185,7 @@ body {
     width: 100%;
     background-color: rgba(242, 237, 237, 0.505)
 }
+
 /* -------------------------------------------------- */
 
 /* 3rd strip */
@@ -295,6 +297,7 @@ body {
         opacity: 0;
     }
 }
+
 /* -------------------------------------------------- */
 
 /* Banner Part */
@@ -382,112 +385,407 @@ main {
 .shop-button:hover {
     background-color: #333;
 }
+
 /* -------------------------------------------------- */
 /* Nike Campaign */
 /* The Lates Part */
 
-.the_latest_text{
+.the_latest_text {
     color: black;
     margin-left: 50px;
     font-weight: 500;
 }
 
 .the_latest {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: white;
-  padding: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
-  position: relative;
-  width: 705px;
-  height: 500px;
-  overflow: hidden;
+    position: relative;
+    width: 705px;
+    height: 500px;
+    overflow: hidden;
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .card-text {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  max-width: 80%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    max-width: 80%;
 }
 
 .card-text p {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .card-text h3 {
-  font-size: 22px;
-  margin: 5px 0;
+    font-size: 22px;
+    margin: 5px 0;
 }
 
 .card-text button {
-  margin-top: 15px;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: black;
-  background-color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 9px 18px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    margin-top: 15px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
 /* -------------------------------------------------- */
 
 /* Featured Section */
 /* Featured Section Styling */
+
 .featured-section {
-  padding: 50px 80px;
+    padding: 50px 80px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.featured-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.featured-card {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.featured-card p {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* -------------------------------------------------- */
+/* Don't Miss Section */
+
+.dont_miss_section {
+    padding: 60px 43px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.dontmiss_title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.dontmiss_card img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.dontmiss_text_container {}
+
+.dontmiss_text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+.dontmiss_text2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 80px;
+    display: inline-block, flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.dontmiss_text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+    font-weight: 500;
+    color: black;
+}
+.shop-button1-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.shop-button1{
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* -------------------------------------------------- */
+/* Shop by Icon Feature */
+
+.shop_by_icon {
+  padding: 10px 40px;
   background-color: white;
   font-family: 'Inter', sans-serif;
 }
 
-.featured-title {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.featured-container {
+.shop_by_icon_container {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.featured-card {
-  flex: 1 1 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.featured-card img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-
-.featured-card p {
-  margin-top: 35px;
-  font-size: 16px;
+.shop_by_icon_title {
+  font-size: 25px;
   font-weight: 500;
-  color: #000;
+  margin-left: 35px;
+  line-height: 2px;
+}
+
+.shop_by_icon_but button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.icon_scroll_wrapper {
+  display: flex;
+  overflow-x: scroll;
+  gap: 16px;
+  scroll-behavior: smooth;
+  padding-bottom: 90px;
+  margin-left: 30px;
+}
+
+.icon_scroll_wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.icon_scroll_wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.icon_scroll_wrapper::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.icon_card {
+  min-width: 280px;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.icon_card img {
+  width: 380px;
+  height: 390px;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------- */
+/* Trending Now Section */
+
+.trending_now {
+  margin-top: 100px;
+  padding: 10px 40px;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.trending_now_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trending_now_title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.trending_now_but button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.trending_scroll_wrapper {
+  display: flex;
+  overflow-x: scroll;
+  gap: 16px;
+  scroll-behavior: smooth;
+  margin-left: 1px;
+}
+
+.trending_scroll_wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.trending_scroll_wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.trending_scroll_wrapper::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* .trending_card {
+  min-width: 280px;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+} */
+
+.trending_card img {
+  width: 413px;
+  height: 415px;
+  margin-bottom: 10px;
+}
+.trending_h1{
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 8px;
+}
+.trending_h2{
+    color: #707072;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+}
+.trending_h3{
+    color: #111111;
+    font-size: 16px;
+    font-weight: 500;
+}
+.trending_card a{
+    text-decoration: none;
+}
+
+/* -------------------------------------------------- */
+/* Shop by Sport */
+
+.shop_by_sport {
+  padding: 10px 40px;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.shop_by_sport_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shop_by_sport_title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 35px;
+  line-height: 2px;
+}
+
+.shop_by_sport_but button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sport_scroll_wrapper {
+  display: flex;
+  overflow-x: scroll;
+  gap: 16px;
+  scroll-behavior: smooth;
+  padding-bottom: 90px;
+  margin-left: 30px;
+}
+
+.sport_scroll_wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.sport_scroll_wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.sport_scroll_wrapper::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* .sport_card {
+  min-width: 280px;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+} */
+
+.sport_card img {
+  height: 300px;
+  width: 400px;
+  margin-bottom: 10px;
 }

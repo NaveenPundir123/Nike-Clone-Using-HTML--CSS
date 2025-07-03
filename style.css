@@ -6,15 +6,14 @@
 
 body {
     font-family: "Inter", serif;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
 }
 
-/* 1st part of WebPage
-1st strip */
+/*1st strip */
 
 .top-part {
-    height: 36px;
+    height: 32px;
     width: 100%;
     background-color: rgba(242, 237, 237, 0.505);
     display: flex;
@@ -28,9 +27,9 @@ body {
 }
 
 .left img {
-    height: 20px;
-    width: 20px;
-    margin-left: 40px;
+    height: 16px;
+    width: 16px;
+    margin-left: 35px;
     cursor: pointer;
 }
 
@@ -38,18 +37,21 @@ body {
     width: 50%;
     display: flex;
     align-items: center;
-    padding: 0 10px 0 20px;
-    margin-left: 40px;
+    padding-top: 12px;
+    margin-left: 38px;
     justify-content: flex-end;
-    padding-right: 50px;
+    margin-right: 38px;
+    cursor: pointer;
 }
 
 .right ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
-    font-weight: 700;
+    font-weight: 600;
     color: #111111;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 18px;
 }
 
@@ -61,20 +63,24 @@ body {
 .right ul li:first-child {
     border-left: none;
 }
+/* -------------------------------------------------- */
 
+/* 2nd strip */
 .navbar {
     background-color: white;
-    height: 60px;
+    height: 55px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 10px;
 }
 
 .navbar .logo {
     flex: 1;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar .logo img {
@@ -83,9 +89,6 @@ body {
     margin-left: 40px;
 }
 
-/* -------------------------------------------------- */
-
-/* 2nd strip */
 
 .center-area {
     flex: 2;
@@ -179,15 +182,18 @@ body {
     margin-right: 35px;
 }
 
-.newz-section {
-    height: 75px;
-    width: 100%;
-    background-color: rgba(242, 237, 237, 0.505)
-}
-
 /* -------------------------------------------------- */
 
 /* 3rd strip */
+
+.newz-section {
+    height: 75px;
+    width: 100%;
+    background-color: rgba(242, 237, 237, 0.505);
+    position: relative;
+    min-height: 75px;
+}
+
 
 .newz-section .text {
     color: black;
@@ -913,4 +919,68 @@ footer hr {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+/* ✅ Responsive Final Polish */
+@media (max-width: 768px) {
+  .center-area ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .bt_2 {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .bt_3 {
+    font-size: 14px;
+    text-align: center;
+    padding-inline: 10px;
+  }
+
+  .icon_scroll_wrapper,
+  .trending_scroll_wrapper,
+  .sport_scroll_wrapper {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .icon_card img,
+  .sport_card img,
+  .trending_card img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .shop_by_icon_but,
+  .trending_now_but,
+  .shop_by_sport_but {
+    display: none;
+  }
+
+  .left-area {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .left-area input {
+    width: 100px;
+  }
 }
